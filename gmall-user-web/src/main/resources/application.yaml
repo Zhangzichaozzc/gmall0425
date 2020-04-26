@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  dubbo:
+    application:
+      name: user-web
+    registry:
+      address: zookeeper://192.168.211.180:2181
+    consumer:
+      check: false
+      timeout: 60000
